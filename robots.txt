@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://randolphlu.github.io/randolphlu/sitemap.xml
+Sitemap: https://randolphlu.github.io/sitemap.xml
