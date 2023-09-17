@@ -6,17 +6,18 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Randolph Lu",
+    url: "https://github.com/Randolph-Lu",
   },
 
   iconAssets: "fontawesome-with-brands",
+  // iconPrefix: "fas fa-",
 
-  logo: "/logo.svg",
+  logo: "/logo_dragon.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/Randolph-Lu/randolphlu.github.io",
 
-  docsDir: "src",
+  docsDir: "doc",
 
   // navbar
   navbar,
@@ -34,12 +35,28 @@ export default hopeTheme({
     },
   },
 
+  blog:{
+    // 个人介绍页地址
+    // intro: "/about-the-author/",
+    sidebarDisplay: "mobile",
+    // 博主头像
+    avatar: "/avatar.jpg",
+    // 圆角
+    roundAvatar: true,
+    // 座右铭
+    description:"In the bleak mid-winter",
+    medias: {
+      Github: "https://github.com/Randolph-Lu",
+    },
+  },
+
   // page meta
   metaLocales: {
     editLink: "在 GitHub 上编辑此页",
   },
 
   plugins: {
+    blog: true,
     // You should generate and use your own comment service
     comment: {
       provider: "Giscus",

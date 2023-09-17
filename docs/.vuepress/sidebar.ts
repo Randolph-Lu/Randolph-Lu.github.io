@@ -1,21 +1,10 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
+  "/language/java/":"structure",
+  "/language/golang/":"structure",
+  "/backend/":"structure",
+  "/algorithm/":"structure",
   "/": [
-    "",
-    {
-      text: "案例",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    },
-    {
-      text: "文档",
-      icon: "book",
-      prefix: "guide/",
-      children: "structure",
-    },
-    "slides",
   ],
 });

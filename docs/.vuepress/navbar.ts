@@ -2,29 +2,55 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/demo/",
   {
-    text: "指南",
-    icon: "lightbulb",
-    prefix: "/guide/",
+    text: "博客",
+    icon: "blog",
+    link: "blog.md"
+  },
+  {
+    text: "技术笔记",
     children: [
       {
-        text: "Bar",
-        icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "" }],
+        text: "编程语言",
+        icon: "code",
+        prefix: "/language/",
+        children: [{
+          text: "Java",
+          icon: "java",
+          link: "java/"
+        },
+        {
+          text: "Go",
+          icon: "golang",
+          link: "golang/",
+        }]
       },
       {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
+        text: "后端",
+        icon: "",
+        prefix: "/backend/",
+        children: [
+          {
+            text: "Spring",
+            icon: "",
+            link: "spring/"
+          },
+        ]
       },
+      // {
+      //   text: "前端",
+      //   icon: "",
+      //   children: []
+      // },
+      {
+        text: "算法",
+        prefix: "/algorithm/",
+        children:["algo/","leetcode/"],
+      }
     ],
   },
   {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
-  },
+    text: "杂乱无章",
+    link: "/others"
+  }
 ]);
